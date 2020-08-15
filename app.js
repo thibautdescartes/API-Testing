@@ -15,8 +15,8 @@ databaseGetButton.onclick = function() {
       Here is a fix that seems pretty simple: https://stackoverflow.com/questions/34901523/file-url-not-allowed-to-load-local-resource-in-the-internet-browser/35014520
     */
    
-    request.open('GET', 'apiRequest');
-    //request.open('GET', 'file:///C:/Users/Gus/apiRequest.json');
+    request.open('GET', 'apiRequest.json');
+    //request.open('GET', 'file:///C:/Users/Thibaut/apiRequest.json');
     request.send();
     request.onreadystatechange = () => {
         console.log(request);
