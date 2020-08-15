@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Database Test Site</title>
+    </head>
+    <body>
+        <h1 style='text-align: center;'>You have reached the database testing page</h1>
+        <p style='text-align: center;'>Press the button to run the script.</p>
+        <button id='databaseGetButton' style='margin-bottom: 10vh;'>Press Me!</button>
+        <div id='buttonTest'>If the JS program executes this text will turn green.</div>
+        <div id='outputFromBackend'>The output from the backend should appear here.</div>
+        <button id='reset' style='margin-top: 10vh;'>Reset</button>
+
+
+        <!--You might need to change the script src depending on where the js file is in relation to the index file on your computer.-->
+        <!--If the text doesn't turn green do CTRL-Shift-I in the browser and check the "Network" tab for info on troubleshooting-->
+        <script src='{% static "dataBaseTesting/app.js" %}'></script>
+    </body>
+</html>
